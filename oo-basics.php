@@ -38,7 +38,6 @@ class Student
 
 $exampleStudent = new Student("u0123456", "John", "Smith");
 var_dump($exampleStudent);
-echo "<p>{$exampleStudent->getStudentDetails()}</p>";
 
 /*
 1) The code above declares a simple Student class. It then creates a Student object and dumps the details of the object. 
