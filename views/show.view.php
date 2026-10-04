@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Show details for a film";
-require("views/partials/header.php");
+require 'views/partials/header.php';
 if($film){
     // Display the film's details. There is a single film, so we don't need a foreach loop
     echo "<h1>{$film->title}</h1>";
@@ -26,5 +26,5 @@ if($film){
 }else{
     echo "<p>No film found</p>";
 }
-require("views/partials/footer.php");
+require 'views/partials/footer.php';
 ?>

@@ -6,7 +6,7 @@ require 'FilmRepository.php';
 $filmRepository = new FilmRepository('localhost','webdev','student','secret');
 
 //Get the id from the hidden field in the form
-$id = $_POST['id'];
+$id = (int) $_POST['id'];
 
 // Ask the film repository to delete the film
 $filmRepository->delete($id);

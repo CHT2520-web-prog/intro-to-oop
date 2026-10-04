@@ -107,7 +107,7 @@ foreach($students as $student){
     echo "<p>{$student->getStudentDetails()}</p>";
 }
 
-    /*
+/*
 4) The class StudentPrinter has a single method printStudents(). 
 a) Write some code that will call the printStudents() method so that the names of all students are displayed (note printStudents is a static method).
 Once this works you can delete the foreach loop you added in (Q3).

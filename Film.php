@@ -1,17 +1,18 @@
 <?php
 class Film
 {
-    public $id;
-    public $title;
-    public $year;
-    public $duration;
+    // Must have public properties for PDO to create objects based on the class
+    public string $id;
+    public string $title;
+    public int $year;
+    public int $duration;
 
     public function __construct()
     {
-        //leave empty
+        //We must leave empty for PDO to create objects based on the class
     }
 
-    function getAge(){
+    function getAge():int{
         return date("Y") - $this->year;
     }
 }

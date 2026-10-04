@@ -12,8 +12,8 @@ $filmRepository = new FilmRepository('localhost','webdev','student','secret');
 // e.g. $_POST['title'] comes from <input type="text" id="title" name="title">
 $film = new Film();
 $film->title = $_POST['title'];
-$film->year = $_POST['year'];
-$film->duration = $_POST['duration'];
+$film->year = (int) $_POST['year'];
+$film->duration = (int) $_POST['duration'];
 
 $filmRepository->save($film);
 

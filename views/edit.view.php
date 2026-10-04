@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Show details for a film";
-require("./views/partials/header.php");
+require 'views/partials/header.php';
 
 echo "<h1>Edit the details for {$film->title}</h1>"; ?>
 <form action="update.php" method="POST">
@@ -30,5 +30,5 @@ echo "<h1>Edit the details for {$film->title}</h1>"; ?>
 </form>
 
 <?php
-require("./views/partials/footer.php");
+require 'views/partials/footer.php';
 ?>

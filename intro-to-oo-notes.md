@@ -66,7 +66,7 @@ echo "<p>{$anotherDog->talk()}</p>"; //Bullseye says woof
 
 ## Debugging objects
 
-We can use *var_dump* to print out the details of an  object (it's methods, properties etc.)
+We can use *var_dump* to print out the details of an object.
 
 ```php
 var_dump($dogObject); //object(Dog)#1 (2) { ["name"]=> string(6) "Buster" ["breed"]=> string(6) "Poodle" }
@@ -129,7 +129,8 @@ foreach($dogs as $dog)
 Abstraction simply means you use something without needing to know how it works inside. We can accomplish tasks by calling object methods, and not have to concern ourselves with the underlying details of what the code is doing. We have already been doing this by using objects that are built into PHP. Look at the following code we have used many times previously:-
 
 ```php
-$conn = new PDO('mysql:host=localhost;dbname=products', 'admin', 'letmein');
+$conn = new PDO('mysql:host=localhost;dbname=travel-guide', 'admin', 'letmein');
+
 ```
 This code creates an instance of a PDO connection object by calling the constructor function of the PDO class. We have happily used this code to connect to a database without having to worry about the details of how the connection takes place. We have then gone on to call methods on this object e.g.
 

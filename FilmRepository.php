@@ -8,12 +8,13 @@ class FilmRepository {
     }
 
     public function all(): array {
-        $stmt = $this->conn->query("SELECT * FROM films;");
-        return $stmt->fetchAll(PDO::FETCH_CLASS, Film::class);
+        $stmt = $this->conn->query("SELECT id, title, year, duration FROM films;");
+        $films = $stmt->fetchAll(PDO::FETCH_CLASS, Film::class);
+        return $films;
     }
 
     public function find(int $id): ?Film {
-        $stmt = $this->conn->prepare("SELECT * FROM films WHERE id = :id");
+        $stmt = $this->conn->prepare("SELECT id, title, year, duration FROM films WHERE id = :id");
         $stmt->bindValue(':id', $id);
         $stmt->execute();
         $film =  $stmt->fetchObject(Film::class);

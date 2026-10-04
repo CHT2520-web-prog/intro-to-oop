@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Add new film";
-require("./views/partials/header.php");
+require 'views/partials/header.php';
 ?>
 <h1>Add a new film</h1>
 
@@ -24,5 +24,5 @@ require("./views/partials/header.php");
 </form>
 
 <?php
-require("./views/partials/footer.php");
+require 'views/partials/footer.php';
 ?>
