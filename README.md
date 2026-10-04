@@ -18,6 +18,9 @@ cd intro-to-oop
 ```
 php -S 0.0.0.0:8000
 ```
+
+The web browser should display a list of films. We'll look at this later.
+
 In the web browser put `/oo-basics.php` on the end of the URL. 
 
 You should get output that looks something like the following:
