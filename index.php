@@ -2,7 +2,7 @@
 require 'Film.php';
 require 'FilmRepository.php';
 
-$filmRepository = new FilmRepository('localhost','webdev','student','secret');
+$filmRepository = new FilmRepository('db','webdev','student','secret');
 
 $films = $filmRepository->all();
 
