@@ -49,5 +49,6 @@ Do the same for the _store.php_, _show.php_ and _edit.php_ pages. See how we are
 
 ### Test your understanding
 - Modify _show.view.php_ so that this page also displays how old the film is. You will need to call the `getAge()` method on the film object.
-- All the CRUD actions should work apart from update and delete. Add code in _update.php_ and _destroy.php_ that will use the `FilmRepository` to update/delete the selected film from the database. 
+- All the CRUD actions should work apart from update and delete. Add code in _update.php_ and _destroy.php_ that will use the `FilmRepository` to update/delete the selected film from the database.
+- Have a go at _destroy.php_ first, this is easier. You should only need to add a single line of code. 
 
