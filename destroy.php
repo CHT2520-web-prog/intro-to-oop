@@ -8,6 +8,8 @@ $filmRepository = new FilmRepository('db','webdev','student','secret');
 //Get the id from the hidden field in the form
 $id = (int) $_POST['id'];
 
+//Add your code in here
+
 //Redirect to the home page
 header('Location: index.php');
 die();
